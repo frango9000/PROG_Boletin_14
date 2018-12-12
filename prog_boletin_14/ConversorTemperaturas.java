@@ -16,11 +16,11 @@ public class ConversorTemperaturas {
     }
     
     public float temperaturaAFarenheit(float c) throws TemperaturaErradaExcepcion{
-        if(c<TMIN) throw new TemperaturaErradaExcepcion();
+        if(c<TMIN) throw new TemperaturaErradaExcepcion("Temp menor a 80C");
         else return c*9/5+32;
     }
     public float temperaturaAReamur(float c) throws TemperaturaErradaExcepcion{
-        if(c<TMIN) throw new TemperaturaErradaExcepcion();
+        if(c<TMIN) throw new TemperaturaErradaExcepcion("Temp menor a 80C");
         else return c/1.25f;
     }
     
